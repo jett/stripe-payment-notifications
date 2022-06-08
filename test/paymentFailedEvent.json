@@ -1,0 +1,31 @@
+  {
+    "Records": [
+      {
+        "EventSource": "aws:sns",
+        "EventVersion": "1.0",
+        "EventSubscriptionArn": "arn:aws:sns:us-east-1::ExampleTopic",
+        "Sns": {
+          "Type": "Notification",
+          "MessageId": "95df01b4-ee98-5cb9-9903-4c221d41eb5e",
+          "TopicArn": "arn:aws:sns:us-east-1:123456789012:ExampleTopic",
+          "Subject": "example subject",
+          "Message": "{\n  \"id\": \"evt_3KqiQsEPDB5PML5z0pZn6R4C\",\n  \"object\": \"event\",\n  \"api_version\": \"2020-08-27\",\n  \"created\": 1650479960,\n  \"data\": {\n    \"object\": {\n      \"id\": \"ch_3KqiQsEPDB5PML5z0CFyVlXA\",\n      \"object\": \"charge\",\n      \"amount\": 20900,\n      \"amount_captured\": 0,\n      \"amount_refunded\": 0,\n      \"application\": \"ca_AXJPUCBikBt9fKD9Oy3keLEGlommaUyd\",\n      \"application_fee\": null,\n      \"application_fee_amount\": null,\n      \"balance_transaction\": null,\n      \"billing_details\": {\n        \"address\": {\n          \"city\": null,\n          \"country\": null,\n          \"line1\": null,\n          \"line2\": null,\n          \"postal_code\": \"19083\",\n          \"state\": null\n        },\n        \"email\": null,\n        \"name\": null,\n        \"phone\": null\n      },\n      \"calculated_statement_descriptor\": \"WOKEN\",\n      \"captured\": false,\n      \"created\": 1650479959,\n      \"currency\": \"usd\",\n      \"customer\": \"cus_L04htHhizxYl3F\",\n      \"description\": \"Subscription update\",\n      \"destination\": null,\n      \"dispute\": null,\n      \"disputed\": false,\n      \"failure_balance_transaction\": null,\n      \"failure_code\": \"card_declined\",\n      \"failure_message\": \"Your card does not support this type of purchase.\",\n      \"fraud_details\": {\n      },\n      \"invoice\": \"in_1KqhSmEPDB5PML5z0BnTZsGo\",\n      \"livemode\": true,\n      \"metadata\": {\n      },\n      \"on_behalf_of\": null,\n      \"order\": null,\n      \"outcome\": {\n        \"network_status\": \"declined_by_network\",\n        \"reason\": \"transaction_not_allowed\",\n        \"risk_level\": \"normal\",\n        \"seller_message\": \"The bank returned the decline code `transaction_not_allowed`.\",\n        \"type\": \"issuer_declined\"\n      },\n      \"paid\": false,\n      \"payment_intent\": \"pi_3KqiQsEPDB5PML5z0bBV1yEb\",\n      \"payment_method\": \"card_1KK4YLEPDB5PML5zFOiJVkSF\",\n      \"payment_method_details\": {\n        \"card\": {\n          \"brand\": \"mastercard\",\n          \"checks\": {\n            \"address_line1_check\": null,\n            \"address_postal_code_check\": \"pass\",\n            \"cvc_check\": null\n          },\n          \"country\": \"US\",\n          \"exp_month\": 3,\n          \"exp_year\": 2024,\n          \"fingerprint\": \"qJfppZlSbdriEzkT\",\n          \"funding\": \"credit\",\n          \"installments\": null,\n          \"last4\": \"7923\",\n          \"mandate\": null,\n          \"network\": \"mastercard\",\n          \"three_d_secure\": null,\n          \"wallet\": null\n        },\n        \"type\": \"card\"\n      },\n      \"receipt_email\": null,\n      \"receipt_number\": null,\n      \"receipt_url\": null,\n      \"refunded\": false,\n      \"refunds\": {\n        \"object\": \"list\",\n        \"data\": [\n\n        ],\n        \"has_more\": false,\n        \"total_count\": 0,\n        \"url\": \"/v1/charges/ch_3KqiQsEPDB5PML5z0CFyVlXA/refunds\"\n      },\n      \"review\": null,\n      \"shipping\": null,\n      \"source\": {\n        \"id\": \"card_1KK4YLEPDB5PML5zFOiJVkSF\",\n        \"object\": \"card\",\n        \"address_city\": null,\n        \"address_country\": null,\n        \"address_line1\": null,\n        \"address_line1_check\": null,\n        \"address_line2\": null,\n        \"address_state\": null,\n        \"address_zip\": \"19083\",\n        \"address_zip_check\": \"pass\",\n        \"brand\": \"MasterCard\",\n        \"country\": \"US\",\n        \"customer\": \"cus_L04htHhizxYl3F\",\n        \"cvc_check\": null,\n        \"dynamic_last4\": null,\n        \"exp_month\": 3,\n        \"exp_year\": 2024,\n        \"fingerprint\": \"qJfppZlSbdriEzkT\",\n        \"funding\": \"credit\",\n        \"last4\": \"7923\",\n        \"metadata\": {\n        },\n        \"name\": null,\n        \"tokenization_method\": null\n      },\n      \"source_transfer\": null,\n      \"statement_descriptor\": null,\n      \"statement_descriptor_suffix\": null,\n      \"status\": \"failed\",\n      \"transfer_data\": null,\n      \"transfer_group\": null\n    }\n  },\n  \"livemode\": true,\n  \"pending_webhooks\": 4,\n  \"request\": {\n    \"id\": null,\n    \"idempotency_key\": \"in_1KqhSmEPDB5PML5z0BnTZsGo-initial_attempt-c3caba26f76916816\"\n  },\n  \"type\": \"charge.failed\"\n}",
+          "Timestamp": "1970-01-01T00:00:00.000Z",
+          "SignatureVersion": "1",
+          "Signature": "EXAMPLE",
+          "SigningCertUrl": "EXAMPLE",
+          "UnsubscribeUrl": "EXAMPLE",
+          "MessageAttributes": {
+            "Test": {
+              "Type": "String",
+              "Value": "TestString"
+            },
+            "TestBinary": {
+              "Type": "Binary",
+              "Value": "TestBinary"
+            }
+          }
+        }
+      }
+    ]
+  }
