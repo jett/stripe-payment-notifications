@@ -42,7 +42,7 @@ async function handler(event) {
 
   const eventType = record.type;
   const customer = record.data.object.customer_name;
-  const failureMessage = record.data.object.failure_message;
+  const failureMessage = record.type;
 
   // const detail = await getCustomerDetail(customer);
 
