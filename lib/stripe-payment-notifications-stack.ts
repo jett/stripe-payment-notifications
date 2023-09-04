@@ -7,6 +7,7 @@ import { EmailSubscription } from 'aws-cdk-lib/aws-sns-subscriptions';
 import * as apigateway from 'aws-cdk-lib/aws-apigateway';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import { Effect, PolicyStatement } from 'aws-cdk-lib/aws-iam';
+import { Runtime } from 'aws-cdk-lib/aws-lambda';
 
 export class StripePaymentNotificationsStack extends Stack {
   constructor(scope: Construct, id: string, props?: StackProps) {
@@ -26,6 +27,7 @@ export class StripePaymentNotificationsStack extends Stack {
     const postHandler = new NodejsFunction(this, 'HelloHandler', {
       // architecture: Architecture.ARM_64,
       entry: `${__dirname}/lambda/notification.ts`,
+      runtime: Runtime.NODEJS_18_X,
       logRetention: RetentionDays.ONE_DAY,
       bundling: {
         minify: true,
